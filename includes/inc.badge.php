@@ -101,6 +101,7 @@ if (isset($_POST['patientRecords'])){
         echo $results;
     }else {
         echo "0";
+
     }
 
 }
