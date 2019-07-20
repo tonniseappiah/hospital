@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The clinic with satisfaction">
+    <meta name="author" content="The UENR Team">
+    <title>Login</title>
+
+    <!-- Favicon -->
+    <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Argon CSS -->
+    <link type="text/css" href="../assets/css/argon.css?v=1.0.0" rel="stylesheet">
+
+    <style>
+        /* html,
+         body {
+             height: 100%;
+         }
+
+         body {
+             display: -ms-flexbox;
+             display: flex;
+             -ms-flex-align: center;
+             align-items: center;
+             padding-top: 40px;
+             padding-bottom: 40px;
+             background-color: #f5f5f5;
+             background-size: cover;
+         }
+
+         .form-signin {
+             width: 100%;
+             max-width: 330px;
+             padding: 15px;
+             margin: auto;
+         }
+         .form-signin .checkbox {
+             font-weight: 400;
+         }
+
+         .form-signin .form-control:focus {
+             z-index: 2;
+         }
+         input[type="email"] {
+             margin-bottom: -1px;
+             border-bottom-right-radius: 0;
+             border-bottom-left-radius: 0;
+         }
+         input[type="password"] {
+             margin-bottom: 10px;
+             border-top-left-radius: 0;
+             border-top-right-radius: 0;
+         }
+ */
+        .has-danger input, .has-danger span i{
+            color: #f5365c !important;
+        }
+
+        .has-success input, .has-success span i{
+            color: #2dce89 !important;
+        }
+    </style>
+
+</head>
+
+
+<body class="text-center">
+
+<main>
+    <section class="section section-shaped section-lg">
+        <div class="shape shape-style-1 bg-gradient-default">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container pt-lg-md">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="card bg-secondary shadow border-0">
+                        <div class="card-header bg-white pb-5">
+                            <div class="text-muted text-center mb-3">
+                                <small>Sign in with</small>
+                            </div>
+                            <div class="btn-wrapper text-center">
+                                <a href="#" class="btn btn-neutral btn-icon">
+                    <span class="btn-inner--icon">
+                      <img src="../assets/img/icons/common/github.svg">
+                    </span>
+                                    <span class="btn-inner--text">Github</span>
+                                </a>
+                                <a href="#" class="btn btn-neutral btn-icon">
+                    <span class="btn-inner--icon">
+                      <img src="../assets/img/icons/common/google.svg">
+                    </span>
+                                    <span class="btn-inner--text">Google</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <div class="text-center text-muted mb-4">
+                                <small>Or sign in with credentials</small>
+                            </div>
+                            <form role="form">
+                                <div class="form-group mb-3">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                        </div>
+                                        <input class="form-control" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                        </div>
+                                        <input class="form-control" placeholder="Password" type="password">
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-control-alternative custom-checkbox">
+                                    <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                                    <label class="custom-control-label" for=" customCheckLogin">
+                                        <span>Remember me</span>
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary my-4">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <a href="#" class="text-light">
+                                <small>Forgot password?</small>
+                            </a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="#" class="text-light">
+                                <small>Create new account</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--<form class="form-signin">
+    <img class="mb-2" src="assets/img/brand/favicon.png" alt="" width="50" height="50">
+
+    <h1 class="mb-3 font-weight-normal text-white">Orients Dev Inc.</h1>
+
+    <div>
+        <div class="form-group mb-0" id="email_group">
+            <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="border-bottom-left-radius: 0"><i class="ni ni-email-83"></i></span>
+                </div>
+                <input class="form-control" placeholder="Email" type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="form-group mb-3" id="password_group">
+            <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="border-top-left-radius: 0"><i class="ni ni-lock-circle-open"></i></span>
+                </div>
+                <input class="form-control has-danger" placeholder="Password" type="password" id="password" name="password">
+            </div>
+        </div>
+
+    </div>
+
+    <button class="btn btn-primary btn-block" type="submit" name="submit">Sign in</button>
+</form>-->
+
+
+
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/popper/popper.js"></script>
+<script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/vendor/headroom/headroom.min.js"></script>
+<!-- Argon JS -->
+<script src="../assets/js/argon.js?v=1.0.1"></script>
+<script>
+
+    $("#email").keyup(function () {
+        var email = $('#email').val();
+        var e_patt = new RegExp(/^[a-z0-9_-]+(\.[a-z0-9_-]+)*@[a-z0-9_-]+(\.[a-z0-9_-]+)*(\.[a-z]{2,4})$/);
+
+        if (!e_patt.test(email)){
+            $('#email').removeClass("is-valid");
+            $('#email_group').removeClass("has-success");
+            $('#email').addClass("is-invalid");
+            $('#email_group').addClass("has-danger");
+
+        }else {
+            $('#email').removeClass("is-invalid");
+            $('#email_group').removeClass("has-danger");
+            $('#email').addClass("is-valid");
+            $('#email_group').addClass("has-success");
+
+        }
+
+
+    });
+
+    $('#password').keyup(function () {
+
+        var password = $('#password').val();
+
+        if (password.length < 6) {
+            $('#password').removeClass("is-valid");
+            $('#password_group').removeClass("has-success");
+            $('#password').addClass("is-invalid");
+            $('#password_group').addClass("has-danger");
+
+        }else {
+            $('#password').removeClass("is-invalid");
+            $('#password_group').removeClass("has-danger");
+            $('#password').addClass("is-valid");
+            $('#password_group').addClass("has-success");
+
+        }
+
+
+    });
+
+
+</script>
+
+
+</body>
+</html>
