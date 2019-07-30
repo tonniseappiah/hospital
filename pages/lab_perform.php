@@ -2,7 +2,7 @@
 
 session_start();
 
-include "includes/inc.database.php";
+include "../includes/inc.database.php";
 
 if (!isset($_GET['reference'])){
 
@@ -678,7 +678,7 @@ if (!isset($_GET['reference'])){
 
             $.ajax({
 
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
                     "labPerform": "labPerform",
@@ -726,7 +726,7 @@ if (!isset($_GET['reference'])){
             var patientID = $('#patientID').val();
 
             $.ajax({
-                url: "includes/inc.loads.php",
+                url: "../includes/inc.loads.php",
                 method: "POST",
                 data: {
                     "labRecords": "labRecords",
@@ -743,7 +743,7 @@ if (!isset($_GET['reference'])){
 
             $.ajax({
 
-                url: "includes/inc.loads.php",
+                url: "../includes/inc.loads.php",
                 method: "POST",
                 data: {
                     "labRequest": "labRequest"
@@ -777,7 +777,7 @@ if (!isset($_GET['reference'])){
 
             $.ajax({
 
-                url: "includes/inc.badge.php",
+                url: "../includes/inc.badge.php",
                 method: "POST",
                 data: {
                     "patientRecords": "patientRecords",
@@ -798,7 +798,7 @@ if (!isset($_GET['reference'])){
 
             $.ajax({
 
-                url: "includes/inc.badge.php",
+                url: "../includes/inc.badge.php",
                 method: "POST",
                 data: {
                     "labRecords": "labRecords",
@@ -819,7 +819,7 @@ if (!isset($_GET['reference'])){
 
             $.ajax({
 
-                url: "includes/inc.badge.php",
+                url: "../includes/inc.badge.php",
                 method: "POST",
                 data: {
                     "labRecordsToday": "labRecordsToday",
@@ -838,7 +838,7 @@ if (!isset($_GET['reference'])){
 
             $.ajax({
 
-                url: "includes/inc.badge.php",
+                url: "../includes/inc.badge.php",
                 method: "POST",
                 data: {
                     "urineRequest": "urineRequest"
@@ -856,7 +856,7 @@ if (!isset($_GET['reference'])){
 
             $.ajax({
 
-                url: "includes/inc.badge.php",
+                url: "../includes/inc.badge.php",
                 method: "POST",
                 data: {
                     "labRequest": "labRequest"

@@ -10,7 +10,7 @@ if (!isset($_SESSION['patientID'])){
 
     $patientID = $_SESSION['patientID'];
 
-    include "includes/inc.database.php";
+    include "../includes/inc.database.php";
 
     date_default_timezone_set("Africa/Accra");
     $date_now = date("Y-m-d");
@@ -438,7 +438,7 @@ if (!isset($_SESSION['patientID'])){
 
                 $.ajax({
 
-                    url: "includes/inc.processes.php",
+                    url: "../includes/inc.processes.php",
                     method: "POST",
                     data: {
 
@@ -497,7 +497,7 @@ if (!isset($_SESSION['patientID'])){
 
             $.ajax({
 
-                url: "includes/inc.loads.php",
+                url: "../includes/inc.loads.php",
                 method: "POST",
                 data: {
                     "lastClinical": "lastClinical",
@@ -520,7 +520,7 @@ if (!isset($_SESSION['patientID'])){
 
             $.ajax({
 
-                url: "includes/inc.loads.php",
+                url: "../includes/inc.loads.php",
                 method: "POST",
                 data: {
                     "lastDrugs": "lastDrugs",
@@ -541,7 +541,7 @@ if (!isset($_SESSION['patientID'])){
             var patientID = $('#patientID').val();
 
             $.ajax({
-                url: "includes/inc.loads.php",
+                url: "../includes/inc.loads.php",
                 method: "POST",
                 data: {
                     "patientRecords": "patientRecords",
@@ -558,7 +558,7 @@ if (!isset($_SESSION['patientID'])){
             var patientID = $('#patientID').val();
 
             $.ajax({
-                url: "includes/inc.loads.php",
+                url: "../includes/inc.loads.php",
                 method: "POST",
                 data: {
                     "labRecords": "labRecords",
@@ -579,7 +579,7 @@ if (!isset($_SESSION['patientID'])){
 
             $.ajax({
 
-                url: "includes/inc.badge.php",
+                url: "../includes/inc.badge.php",
                 method: "POST",
                 data: {
                     "patientRecords": "patientRecords",
@@ -600,7 +600,7 @@ if (!isset($_SESSION['patientID'])){
 
             $.ajax({
 
-                url: "includes/inc.badge.php",
+                url: "../includes/inc.badge.php",
                 method: "POST",
                 data: {
                     "labRecords": "labRecords",

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "includes/inc.database.php";
+include "../includes/inc.database.php";
 
 ?>
 
@@ -453,7 +453,7 @@ include "includes/inc.database.php";
 
        $.ajax({
 
-           url: "includes/inc.processes.php",
+           url: "../includes/inc.processes.php",
            method: "POST",
            data: {
                "in_treatment": "in_treatment",
@@ -495,7 +495,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.processes.php",
+            url: "../includes/inc.processes.php",
             method: "POST",
             data: {
                 "check-in": "check-in",

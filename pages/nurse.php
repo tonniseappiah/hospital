@@ -8,7 +8,7 @@ if (!isset($_SESSION['staffID'])){
 
 } else {
 
-    include "includes/inc.database.php";
+    include "../includes/inc.database.php";
 
     date_default_timezone_set("Africa/Accra");
     $date_now = date("Y-m-d");
@@ -400,7 +400,7 @@ if (!isset($_SESSION['staffID'])){
 
                 $.ajax({
 
-                    url: "includes/inc.processes.php",
+                    url: "../includes/inc.processes.php",
                     method: "POST",
                     data: {
                         "nurse": "nurse",

@@ -2,7 +2,7 @@
 
 session_start();
 
-include "includes/inc.database.php";
+include "../includes/inc.database.php";
 
 ?>
 
@@ -661,7 +661,7 @@ include "includes/inc.database.php";
 
 
             $.ajax({
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
                     "patient": "student",
@@ -727,7 +727,7 @@ include "includes/inc.database.php";
 
             $.ajax({
 
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
                     "patient": "staff",
@@ -795,7 +795,7 @@ include "includes/inc.database.php";
 
             $.ajax({
 
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
                     "patient": "foreign",
@@ -840,7 +840,7 @@ include "includes/inc.database.php";
     function last_inserted_patient() {
         $.ajax({
 
-            url: "includes/inc.last_inserted_patient.php",
+            url: "../includes/inc.last_inserted_patient.php",
             method: "POST",
 
             success: function (data) {
@@ -858,7 +858,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.last_inserted_patient.php",
+            url: "../includes/inc.last_inserted_patient.php",
             method: "POST",
 
             success: function (data) {

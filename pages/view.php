@@ -1,6 +1,6 @@
 <?php
 
-include "includes/inc.database.php";
+include "../includes/inc.database.php";
 
 if (!isset($_GET['reference'])){
 
@@ -1053,7 +1053,7 @@ if (!isset($_GET['reference'])){
 
                 $.ajax({
 
-                    url: "includes/inc.processes.php",
+                    url: "../includes/inc.processes.php",
                     method: "POST",
                     data: {
                         "add_lab_item": "add_lab_item",

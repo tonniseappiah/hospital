@@ -1,6 +1,6 @@
 <?php
 
-include "includes/inc.database.php";
+include "../includes/inc.database.php";
 
 ?>
 
@@ -422,7 +422,7 @@ include "includes/inc.database.php";
         } else {
 
             $.ajax({
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
                     "check_item": "check_item",
@@ -487,7 +487,7 @@ include "includes/inc.database.php";
 
             $.ajax({
 
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
                     "add_lab_item": "add_lab_item",
@@ -589,7 +589,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "patientRecords": "patientRecords",
@@ -608,7 +608,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "labRecordsNoPatient": "labRecordsNoPatient"
@@ -626,7 +626,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "labRecordsTodayNoPatient": "labRecordsTodayNoPatient"
@@ -644,7 +644,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "urineRequest": "urineRequest"
@@ -662,7 +662,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "labRequest": "labRequest"
@@ -682,7 +682,7 @@ include "includes/inc.database.php";
 
         $.ajax({
 
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "labRequest": "labRequest"
@@ -701,7 +701,7 @@ include "includes/inc.database.php";
     function labRecordsToday() {
 
         $.ajax({
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "labRecordsTodayNoPatient": "labRecordsTodayNoPatient",

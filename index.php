@@ -256,7 +256,7 @@ $fulUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         $('#success').removeClass('invisible');
 
                         setInterval(function () {
-                            window.location = "opd.php";
+                            window.location = "pages/opd.php";
                         }, 1000)
 
                     }else if (data == "Nurse") {
@@ -266,7 +266,7 @@ $fulUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         $('#success').removeClass('invisible');
 
                         setInterval(function () {
-                            window.location = "nurse.php";
+                            window.location = "pages/nurse.php";
                         }, 1000)
 
                     }else if (data == "Doctor") {
@@ -276,7 +276,7 @@ $fulUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         $('#success').removeClass('invisible');
 
                         setInterval(function () {
-                            window.location = "doctor.php";
+                            window.location = "pages/doctor.php";
                         }, 1000)
 
                     }else if (data == "Labtech") {
@@ -286,7 +286,7 @@ $fulUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         $('#success').removeClass('invisible');
 
                         setInterval(function () {
-                            window.location = "lab_tech.php";
+                            window.location = "pages/lab_tech.php";
                         }, 1000)
 
                     }else if (data == "Pharmacist") {
@@ -296,7 +296,7 @@ $fulUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         $('#success').removeClass('invisible');
 
                         setInterval(function () {
-                            window.location = "pharm.php";
+                            window.location = "pages/pharm.php";
                         }, 1000)
 
                     }else if (data == "INVALID_EMAIL") {

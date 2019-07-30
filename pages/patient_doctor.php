@@ -2,7 +2,7 @@
 
 session_start();
 
-include "includes/inc.database.php";
+include "../includes/inc.database.php";
 
 $patientID = $_SESSION['patientID'];
 
@@ -645,7 +645,7 @@ $patientID = $_SESSION['patientID'];
 
             $.ajax({
 
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
 
@@ -721,7 +721,7 @@ $patientID = $_SESSION['patientID'];
 
             $.ajax({
 
-                url: "includes/inc.processes.php",
+                url: "../includes/inc.processes.php",
                 method: "POST",
                 data: {
                     "labRequest": "labRequest",
@@ -793,7 +793,7 @@ $patientID = $_SESSION['patientID'];
 
         $.ajax({
 
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "lastClinical": "lastClinical",
@@ -816,7 +816,7 @@ $patientID = $_SESSION['patientID'];
 
         $.ajax({
 
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "lastDrugs": "lastDrugs",
@@ -837,7 +837,7 @@ $patientID = $_SESSION['patientID'];
         var patientID = $('#patientID').val();
 
         $.ajax({
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "patientRecords": "patientRecords",
@@ -854,7 +854,7 @@ $patientID = $_SESSION['patientID'];
         var patientID = $('#patientID').val();
 
         $.ajax({
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "labRecords": "labRecords",
@@ -871,7 +871,7 @@ $patientID = $_SESSION['patientID'];
         var patientID = $('#patientID').val();
 
         $.ajax({
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "labRecordsToday": "labRecordsToday",
@@ -888,7 +888,7 @@ $patientID = $_SESSION['patientID'];
         var patientID = $('#patientID').val();
 
         $.ajax({
-            url: "includes/inc.loads.php",
+            url: "../includes/inc.loads.php",
             method: "POST",
             data: {
                 "requestBody": "requestBody",
@@ -909,7 +909,7 @@ $patientID = $_SESSION['patientID'];
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "patientRecords": "patientRecords",
@@ -930,7 +930,7 @@ $patientID = $_SESSION['patientID'];
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "labRecords": "labRecords",
@@ -951,7 +951,7 @@ $patientID = $_SESSION['patientID'];
 
         $.ajax({
 
-            url: "includes/inc.badge.php",
+            url: "../includes/inc.badge.php",
             method: "POST",
             data: {
                 "labRecordsToday": "labRecordsToday",
